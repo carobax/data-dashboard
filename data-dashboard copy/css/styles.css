@@ -1,0 +1,90 @@
+
+
+/*Start of navigtion bar*/
+.top-nav{
+  display: block ;
+  background-color: #272727 ;
+  width: 100% ;
+  height: 50px;
+}
+.nav-margin {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 580px) {
+    .subscribe {
+       display: none;
+   }
+}
+/*end nav bar*/
+
+h4, h5, p {
+  font-family: Arial;
+  color: black;
+}
+
+h1, h2, h3, h6{
+  font-family: 'Lora';
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+/*For the graphic at the top of the page*/
+.centered {
+  margin-left: 325px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 580px) {
+    .centered {
+       margin-left: 90px;
+   }
+}
+
+.margin-chart{
+  margin-bottom: 50px !important;
+}
+
+/*for the box at the bottom*/
+.psa {
+  display: block;
+  background-color: #EEEEEE;
+  padding: 30px;
+  width: inherit;
+  height: inherit;
+  margin-bottom: 20px;
+}
+a{
+  color: #6FA6C7 !important;
+}
+
+
+
+/*Highcharts CSS*/
+
+#drug-chart {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+
+}
+#us-map {
+	min-width: 420px;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+#line-graph{
+  min-width: 310px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+/*End of Highcharts CSS*/

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Data Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="row">
+    <div class="col-md-12">
+    <div class="top-nav">
+      <div class="container">
+        <a href="#"><img src="images/hamburger.png" alt="Hamburger Menu Icon" height="25px" class="nav-margin"></a>
+        <img src="images/logo-big.png" alt="LA Times Logo Big" height="25px" class="nav-margin">
+        <a href="#"><img src="images/subscribe.png" class="subscribe" alt="subcribe button" height="35px" align="right" style="margin-top: 7px;"></a>
+      </div>
+    </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="centered"src="images/pill-death.png" alt="Pill of Death" width="40%">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <div class="row">
+
+          <div class="col-xs-0 col-md-2"></div>
+        <div class="col-md-8">
+          <h1 style="text-align:center">Drug Overdose Deaths in the United States are Rising</h1>
+          <h6 style="text-align:center">BY <a href="#" style="color:#ff5443">CAROLINE BAXENDALE</a></h6>
+          <p style="margin-top: 50px;">According to Centers for Disease Control and Prevention, deaths by drug overdose has risen by 37% since 2015. This means that 17,604 more people have died, and there may be more deaths unaccounted for due to incomplete data.</p>
+        </div>
+      <div class="col-xs-0 col-md-2">
+      </div>
+        </div>
+        </div>
+        <div class="margin-chart" id="line-graph"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-0 col-md-2"></div>
+            <div class="col-md-8">
+              <h3 style="text-align:center">Which States Have the Most Amount of Drug Related Deaths?</h3>
+              <p style="margin-top: 20px;">The map below illustrates the amount of drug related deaths that have occurred by state. The states with the most amount of drug deaths are Florida with 5,177, Pennsylvania with 4,818, California with 4,736, and Ohio with 4,498.  </p>
+
+            </div>
+            <div class="col-xs-0 col-md-2"></div>
+          </div>
+        </div>
+        <div class="margin-chart" id="us-map"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-0 col-md-2"></div>
+            <div class="col-md-8">
+              <h3 style="text-align:center">The Culprits</h3>
+              <p style="margin-top: 20px;">Synthetic opioids, at 28 percent, cause the most amount of drug overdose deaths in the United States. The second most amount of deaths is caused by heroin, at 21 percent. Opioids, like OxyContin®, Vicodin®, codeine, morphine, and others are legally available with a prescription and can be easily abused. These opioids produce a euphoric feeling on top of pain relief, and can become addictive even with regular use. <a href="https://www.drugabuse.gov/drugs-abuse/opioids">Source</a></p>
+
+            </div>
+            <div class="col-xs-0 col-md-2"></div>
+          </div>
+        </div>
+        <div class="margin-chart" id="drug-chart">
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-0 col-md-2"></div>
+        <div class="col-md-8 psa">
+          <div class="container">
+          <h3 style="text-align:center">Help Save a Life</h3>
+          <p style="margin-top: 20px;">If you or someone you know suffer from a drug addiction, please call SAMHSA’s (Substance Abuse and Mental Health Services Administration) National Helpline:</p>
+          <h5 style="text-align:center">1-800-662-HELP (4357)</h5>
+          <p>They can refer you to local treatment and services to start on the road to recovery.</p>
+          <span></span>
+          <a href="https://findtreatment.samhsa.gov/"><p>You can also visit SAMHSA's website for their services locator.</p></a>
+        </div>
+        </div>
+        <div class="col-xs-0 col-md-2"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-0"></div>
+        <div class="col-m-4 ">
+          <div class="thing">
+    <table id="data" class="display" cellspacing="0" width="70%" align="middle">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>State Name</th>
+                <th>Month</th>
+                <th>Period</th>
+                <th>Indicator</th>
+                <th>Data Value</th>
+                <th>Percent Complete</th>
+                <th>Percent Pending Investigation</th>
+                <th>Footnote</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+              <th>State</th>
+              <th>State Name</th>
+              <th>Month</th>
+              <th>Period</th>
+              <th>Indicator</th>
+              <th>Data Value</th>
+              <th>Percent Complete</th>
+              <th>Percent Pending Investigation</th>
+              <th>Footnote</th>
+            </tr>
+        </tfoot>
+
+    </table>
+  </div>
+  </div>
+  <div class="col-md-4 col-xs-0"></div>
+</div>
+</div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- dataTables -->
+     <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <!-- HighCharts -->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/modules/tilemap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+    <!-- My JS File -->
+    <script src="js/scripts.js">
+
+    </script>
+  </body>
+    </html>
